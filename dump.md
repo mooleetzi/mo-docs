@@ -17,6 +17,6 @@ dump [all|database databaseName|table tableName] into 'filePath';
 
 ## 3、实现原理
 
-1、获取待导出元素的ddl
-2、获取待导出元素的数据并生成insert语句
-3、将ddl和insert语句写入文件
+1. 获取待导出元素的ddl
+2. 获取待导出元素的数据并生成insert语句
+3. 将ddl和insert语句写入文件
