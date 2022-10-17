@@ -26,6 +26,8 @@ dump [all|database databaseName|table tableName] into 'filePath';
 
 #### 3.2 获取数据生成insert语句
 
+**? 读数据需要考虑事务吗**
+
 1. 获取数据 parser -> frontend -> session -> session.Pu.StorageEngine
 2. 生成对应insert语句
 
