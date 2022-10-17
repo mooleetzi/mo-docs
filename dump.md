@@ -10,12 +10,14 @@ dump [all|database databaseName|table tableName] into 'filePath';
 
 ### 2、参数说明
 
-* all：导出权限范围内所有数据库里的所有表 **?mo当前有权限限制吗**
+* all：导出当前用户所有可见数据库里的所有表 **?可见性是其他地方实现的吧**
 * database databaseName：导出指定数据库里的所有表
 * table tableName：如果指定了数据库名，导出指定数据库里的指定表，否则导出当前数据库里的指定表
 * filePath：导出文件的路径
 
-### 3、实现原理 直接走前端还是查询计划？
+### 3、实现原理
+
+**直接在前端处理还是走查询计划？**
 
 #### 3.1 获取待导出元素的ddl
 
