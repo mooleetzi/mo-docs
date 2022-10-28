@@ -5,7 +5,7 @@
 ### 1、基本语法
 
 ```
-modump database databaseName[ tables tableNameList] into 'filePath';
+modump database databaseName[ tables tableNameList] into 'filePath' [max_file_size size];
 ``` 
 
 ### 2、参数说明
@@ -13,6 +13,7 @@ modump database databaseName[ tables tableNameList] into 'filePath';
 * database databaseName：指定导出的数据库
 * table tableNameList：指定导出的表,多个表用逗号分隔;如果不指定，则导出整个数据库
 * filePath：导出文件的路径
+* max_file_size size：指定导出文件的最大大小，单位为B,最小为1MB;如果超出指定大小，则会自动分割成多个文件
 
 ### 3、实现原理
 
